@@ -97,28 +97,6 @@
         <button class="guest-btn" onclick="enterAsGuest()">Enter as Guest</button>
     </div>
 
-    <script>
-        document.getElementById('authForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const email = document.getElementById('email').value;
-            const password = document.getElementById('password').value;
-            console.log('Sign In attempted with:', email, password);
-            // Here you would typically send these credentials to your server
-            alert('Sign In functionality would be implemented here.');
-            // Redirect to the main page after successful login
-            window.location.href = 'main.html'; // Ensure this file exists and is your main page
-        });
-    
-        function showSignUp() {
-            alert('Sign Up page would be shown here.');
-            // In a real app, you might redirect to a sign-up page or show a sign-up modal
-        }
-    
-        function enterAsGuest() {
-            alert('Entering as guest. Redirecting to main page...');
-            // In a real app, you would redirect to the main page here
-            window.location.href = 'main.html'; // Ensure this file exists and is your main page
-        }
-    </script>    
+    <script src="auth.js"></script>
 </body>
 </html>
